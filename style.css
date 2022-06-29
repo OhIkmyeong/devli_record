@@ -1,0 +1,64 @@
+@charset "utf-8";
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:100%;}
+body{
+    display:flex;flex-flow:column nowrap;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#010101;
+    color:#fff;}
+li{list-style-type:none;}
+a{text-decoration:none;}
+
+#wrapper{
+    position:relative;
+    width:90%;
+    background:rgba(255,255,255,.05);
+    border-radius:8px;}
+
+#ctn-btn{
+    display:flex; flex-flow:row wrap;
+    justify-content:center; align-items:center;
+    gap:.5rem;
+    position:relative;
+    width:100%;
+    padding:2rem 1rem;
+    background:rgba(255,255,255,.03);}
+
+#ctn-btn [class ^= "btn-"]{
+    display:block; position:relative;
+    border:none;
+    padding:.6em 1.5em .7em;
+    border-radius:2px;
+    font-family:inherit;font-size:.85rem;text-align:center;font-weight:bold;color:#fff;
+    cursor:pointer;}
+
+    #ctn-btn [class ^= "btn-"]:hover{filter:brightness(50%);}
+    #ctn-btn [class ^= "btn-"]:focus{transform:translateY(5px);}
+
+#ctn-btn .btn-record{background:mediumaquamarine; color:#000;}
+#ctn-btn .btn-stop{background:rgb(177, 43, 43);}
+#ctn-btn .btn-play{background:rgb(80, 80, 80);}
+#ctn-btn .btn-download{background:dodgerblue;}
+
+#ctn-vid{
+    display:flex;flex-flow:row wrap;
+    justify-content:space-around;
+    gap:1rem;
+    position:relative;
+    width:100%;
+    padding:1.5rem;}
+
+#ctn-vid [class ^="vid-"]{
+    position:relative;
+    width:clamp(300px,calc(50% - 1rem),500px);
+    padding:1rem;
+    background:rgba(255,255,255,.02);
+    text-align:center;}
+
+#ctn-vid [class ^="vid-"] h2{margin-bottom:1rem;;font-size:1rem;}
+
+#ctn-vid [class ^="vid-"] video{
+    width:100%; aspect-ratio:16/9;
+    border:1px solid #333;}

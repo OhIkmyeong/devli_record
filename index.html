@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데브리-녹화프로그램</title>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <script src="./js/main.js" type="module"></script>
+</head>
+<body>
+    <section id="wrapper">
+        <article id="ctn-btn">
+            <button class="btn-record">녹화</button>
+            <button class="btn-stop">중지</button>
+            <button class="btn-play">녹화보기</button>
+            <a class="btn-download" download>다운로드</a>
+        </article><!-- ctn-btn -->
+
+        <article id="ctn-vid">
+            <div class="vid-item">
+                <h2>미리보기</h2>
+                <video id="preview" autoplay muted></video>
+            </div>
+
+            <div class="vid-item">
+                <h2>Recording</h2>
+                <video id="recording"></video>
+            </div>
+        </article><!-- ctn-vid -->
+    </section>
+</body>
+</html>
